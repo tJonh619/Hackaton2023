@@ -5,12 +5,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tienda Kofuku</title>
-  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/styles.css"> 
 </head>
 
 <body>
-  <header class="header" include-html="./views/header.html"> </header>
-  <main class="container">
+  <header>
+    <nav class="navbar">
+        <span class="hamburger-btn">Menu</span>
+        <a href="#" class="logo">
+            <p>logo aqui </p>
+            <!-- <img src="../../public/png/FacebookBlanco.png" alt="logo"> -->
+            <h2>Tienda Kofuku</h2>
+        </a>
+        <ul class="links">
+            <span class="close-btn">Cerrar</span>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Acerca de nosotros</a></li>
+            <li><a href="#">Contactanos</a></li>
+        </ul>
+        <button class="login-btn">Cerrar sesion</button>
+    </nav>
+  </header>
+
+  <main class="form-popup">
     <div class="separacion"></div>
     <div class="row">
       <menu id="menu" class="col-xs-16 col-s-16 col-m-3 col-l-3" >
@@ -25,7 +42,7 @@
   <footer class="footer" include-html="./views/footer.html"></footer>
 
   <script src="./scripts/include-html.Js"></script>
-
+  <script src="./scripts/main.js" type="module"></script>
 </body>
 
 </html>

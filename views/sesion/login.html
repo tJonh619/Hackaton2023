@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicia sesion en Kofuku</title>
+    <link rel="stylesheet" href="../../styles/signup-login.css">
+    <script src="../../scripts/include-html.Js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <span class="hamburger-btn">Menu</span>
+            <a href="#" class="logo">
+                <p>logo aqui </p>
+                <!-- <img src="../../public/png/FacebookBlanco.png" alt="logo"> -->
+                <h2>Tienda Kofuku</h2>
+            </a>
+            <ul class="links">
+                <span class="close-btn">Cerrar</span>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Acerca de nosotros</a></li>
+                <li><a href="#">Contactanos</a></li>
+            </ul>
+            <button class="login-btn">Inicia sesion</button>
+        </nav>
+    </header>
+
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+        <span class="close-btn">Cerrar</span>
+        <div class="form-box login">
+            <div class="form-details">
+                <h2>Bienvenido de nuevo</h2>
+                <p>Inicia sesion, muchas ofertas nuevas y articulos nuevos te estan esperando.</p>
+            </div>
+            <div class="form-content">
+                <h2>Inicia Sesion</h2>
+                <form action="#" id="login-form">
+                    <div class="input-field">
+                        <input type="email" id="login-email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="login-password" required>
+                        <label>Password</label>
+                    </div>
+                    <a href="#" class="forgot-pass-link">Contraseña olvidada?</a>
+                    <button type="submit">Iniciar sesion</button>
+                </form>
+                <div class="bottom-link">
+                    No tienes una cuenta?
+                    <a href="#" id="signup-link">Registrate</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2><b>Crea una cuenta</b></h2>
+                <p>Para ser parte de nuestra comunidad, por favor registrate utilizando tus datos personales.</p>
+            </div>
+            <div class="form-content">
+                <h2>Registrarse</h2>
+                <form action="#" id="signup-form">
+                    <div class="input-field">
+                        <input type="email" id="signup-email" required >
+                        <label>Ingresa tu correo</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="signup-password" required >
+                        <label>Crea tu Contraseña</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            Acepto los
+                            <a href="#" class="option">Terminos y condiciones</a>
+                        </label>
+                    </div>
+                    <button type="submit">Registrate</button>
+                </form>
+                <div class="bottom-link">
+                    Tienes una cuenta? 
+                    <a href="#" id="login-link">Inicia sesion</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../scripts/main.js" type="module"></script>
+</body>
+</html>
